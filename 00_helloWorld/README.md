@@ -7,32 +7,32 @@
 >Install node packtages:
 >truffle
 
-`npm i -g truffle`
+    `npm i -g truffle`
 
 >testrpc 
 
-`npm i -g truffle ethereumjs-testrpc`
+    `npm i -g truffle ethereumjs-testrpc`
 
 >Start codding
 
-`truffle init`
+    `truffle init`
 
 >Scarefold a HelloWorld.sol contract (./contracts/)
 
-`truffle create contract HelloWorld`
+    `truffle create contract HelloWorld`
 
 >Play with the code
 
 >Compile
 
-`truffle compile`
+    `truffle compile`
 
 >run a develepment ethereum node (edit ./truffle-config.js) in another terminal
 
-`testrcp`
+    `testrcp`
 
 >Test your functions (./test/yourtests.js)
 
-`truffle test`
+    `truffle test`
 
 >Notes: Development environment: Sublime + solidity module + view -> layeout -> Columns:2 (1: *.sol files|2: *.js files)
