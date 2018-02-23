@@ -35,4 +35,4 @@ Generated with `truffle init webpack`
 
 >Notes: Development environment: Sublime + solidity module + view -> layeout -> Columns:2 (1: *.sol files|2: *.js files)
 
-Taken from the Medium blog post [https://medium.com/@gus_tavo_guim/testing-your-smart-contracts-with-javascript-40d4edc2abed](https://medium.com/@gus_tavo_guim/testing-your-smart-contracts-with-javascript-40d4edc2abed).
+Taken from the Medium blog post [@gus_tavo_guim](https://medium.com/@gus_tavo_guim/testing-your-smart-contracts-with-javascript-40d4edc2abed).

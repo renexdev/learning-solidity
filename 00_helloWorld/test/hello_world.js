@@ -6,7 +6,15 @@ contract('helloReceipt', accounts => {
   let helloReceipt
 
   before(async () => {
-    helloReceipt = await getContract('HelloWorld').new()
+    helloReceipt = await HelloWorld.new()
+
+    /*
+    //https://github.com/trufflesuite/truffle-contract
+    You now have access to the following functions on MyContract, as well as many others:
+    at(): Create an instance of MyContract that represents your contract at a specific address.
+    deployed(): Create an instance of MyContract that represents the default address managed by MyContract.
+    new(): Deploy a new version of this contract to the network, getting an instance of MyContract that represents the newly deployed instance.
+    */
   })
 
   it('sets the first account as the contract creator', async () => {
@@ -33,11 +41,9 @@ contract('helloReceipt', accounts => {
         console.log('_creator: ',result.args._creator);
         console.log('_lastCaller: ',result.args._lastCaller);
         console.log('_message: ',result.args._message);
-        console.log('_totalGas: ',result.args._totalGas);
+        console.log('_totalGas: ',result.args._totalGas.toNumber());
     });
 
-    //eventFiltered = helloReceipt.logs.filter(l => l.event == 'GiveMeData')[0].args._creator
-    
     const message = await helloReceipt.getMessage()
     assert.equal(message, 'topu', 'message is hola mundo')
   })

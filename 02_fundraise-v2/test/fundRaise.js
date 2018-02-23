@@ -1,8 +1,10 @@
 const FundRaise = artifacts.require('./FundRaise.sol')
 const { should, EVMThrow } = require('./helpers')
 
-contract('FundRaise', function ([owner, donor]) {
-    let fundRaise
+contract('FundRaise', accounts => {
+    const owner = accounts[0]
+    const donor = accounts[1]
+    const external = accounts[2]
 
     beforeEach('setup contract for each test', async function () {
         fundRaise = await FundRaise.new(owner)
@@ -10,7 +12,7 @@ contract('FundRaise', function ([owner, donor]) {
 
     it('has an owner', async function () {
         const fundRaiseOwner = await fundRaise.owner()
-
+        //assert.equal in previous v 0.1.0
         fundRaiseOwner.should.be.equal(owner)
     })
 
@@ -18,6 +20,7 @@ contract('FundRaise', function ([owner, donor]) {
         await fundRaise.sendTransaction({ value: 1e+18, from: donor })
 
         const fundRaiseAddress = await fundRaise.address
+        //assert.equal in previous v 0.1.0
         web3.eth.getBalance(fundRaiseAddress).should.be.bignumber.equal(1e+18)
     })
 
@@ -26,11 +29,13 @@ contract('FundRaise', function ([owner, donor]) {
         fundRaise.sendTransaction({ value: 1e+18, from: donor }).should.be.rejectedWith(EVMThrow)
 
         const fundRaiseAddress = await fundRaise.address
+        //assert.equal in previous v 0.1.0
         web3.eth.getBalance(fundRaiseAddress).should.be.bignumber.equal(0)
 
         // unpausing it
         await fundRaise.unpause()
         await fundRaise.sendTransaction({ value: 1e+18, from: donor })
+        //assert.equal in previous v 0.1.0
         web3.eth.getBalance(fundRaiseAddress).should.be.bignumber.equal(1e+18)
     })
 
@@ -43,6 +48,7 @@ contract('FundRaise', function ([owner, donor]) {
 
         // removing funds
         await fundRaise.removeFunds()
+        //assert.equal in previous v 0.1.0
         web3.eth.getBalance(fundRaiseAddress).should.be.bignumber.equal(0)
         web3.eth.getBalance(owner).should.be.bignumber.above(ownerBalanceBeforeRemovingFunds)
 

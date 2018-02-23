@@ -10,6 +10,11 @@
 
     `npm i -g truffle`
 
+> Already added 
+    `npm i --only=dev --save chai`
+    `npm i --only=dev --save chai-as-promised`
+    `npm i --only=dev --save chai-bignumber`
+
 >testrpc 
 
     `npm i -g truffle ethereumjs-testrpc`
