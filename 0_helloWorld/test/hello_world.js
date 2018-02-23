@@ -41,4 +41,6 @@ contract('helloReceipt', accounts => {
     const message = await helloReceipt.getMessage()
     assert.equal(message, 'topu', 'message is hola mundo')
   })
+    console.log('Press Crl+X to exit');
+
 })
