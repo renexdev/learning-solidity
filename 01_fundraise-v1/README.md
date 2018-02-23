@@ -1,6 +1,8 @@
 
 ### Learning Solidity: FundRaise sample v 0.1.0
 
+Generated with `truffle init webpack`
+
 >Open your terminal
 
 >Install node

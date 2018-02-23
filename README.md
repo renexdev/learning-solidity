@@ -1,5 +1,10 @@
 Learning path: Solidity
 
-Recommended blogs:
+[Truffle commands](http://truffleframework.com/docs/advanced/commands)
+[Truffle boxes](http://truffleframework.com/boxes/)
 
-https://medium.com/@gus_tavo_guim
+Recommended lectures:
+
+ 
+[Writing tests in Solidity](http://truffleframework.com/docs/getting_started/solidity-tests)
+[@gus_tavo_guim](https://medium.com/@gus_tavo_guim)
