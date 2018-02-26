@@ -1,10 +1,11 @@
 # Learning path: Solidity
 
+
+Truffle lectures:
+
 [Truffle commands](http://truffleframework.com/docs/advanced/commands)
 
 [Truffle boxes](http://truffleframework.com/boxes/)
-
-Recommended lectures:
 
 [Truffle tutorials](http://truffleframework.com/tutorials/)
 
