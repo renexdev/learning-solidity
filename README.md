@@ -10,9 +10,6 @@ Recommended lectures:
 
 [Writing tests in Solidity](http://truffleframework.com/docs/getting_started/solidity-tests)
 
-[@gus_tavo_guim](https://medium.com/@gus_tavo_guim)
-
-
 Apis:
 
 [Chai](http://chaijs.com/api/bdd/)
