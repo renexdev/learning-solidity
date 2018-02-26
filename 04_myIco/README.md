@@ -18,13 +18,15 @@
 
 > The account that will buy MYC tokens.
 
-account1 = web3.eth.accounts[1]
-'0xce9cf5e8ee78142613001b5b6488a3718ed7e6ae'
+    `account1 = web3.eth.accounts[1]`
+
+    0xce9cf5e8ee78142613001b5b6488a3718ed7e6ae
 
 > The address of the MYC token instance that was created when the crowdsale contract was deployed
-> assign the result of MyCoinCrowdsale.deployed() to the variable crowdsale
 
-MyCoinCrowdsale.deployed().then(inst => { crowdsale = inst })
+> Assign the result of MyCoinCrowdsale.deployed() to the variable crowdsale
+
+    `MyCoinCrowdsale.deployed().then(inst => { crowdsale = inst })`
 
     `crowdsale.token().then(addr => { tokenAddress = addr } )`
 
