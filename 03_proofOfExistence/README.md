@@ -2,7 +2,7 @@
 
 >The current repo is the result of unboxing webpack and follow the tut of 
 https:
->blog.zeppelin.solutions/the-hitchhikers-guide-to-smart-contracts-in-ethereum-848f08001f05
+>[Zeppelin](blog.zeppelin.solutions/the-hitchhikers-guide-to-smart-contracts-in-ethereum-848f08001f05)
 
 >So if you clone this there is no need of running in a terminal
 
@@ -57,8 +57,10 @@ https:
     `var poe2 = ProofOfExistence2.at(ProofOfExistence2.address)`
 
 > let's check for some new document, and it shouldn't be there.
-poe2.checkDocument('hello')
-false
+
+    `poe2.checkDocument('hello')`
+
+    false
 
 > let's now add that document to the proof store
 
@@ -82,9 +84,9 @@ false
 
     `poe2.checkDocument('Xamedis rocks')`
 
-true
+    true
 
-### You can deploy and play with the contract on the testnet (stop testrpc before, or modify the truffle.js to set the network)
+### You can deploy and play with the contract on the testnet (stop testrpc and run geth, or modify the truffle.js to choose a network)
 
     `geth --testnet --rpc console 2>> geth.log`
 
