@@ -1,8 +1,6 @@
 # Learning Solidity: Proof Of existence (Zeppelin)
 
->The current repo is the result of unboxing webpack and follow the tut of 
-https:
->[Zeppelin](blog.zeppelin.solutions/the-hitchhikers-guide-to-smart-contracts-in-ethereum-848f08001f05)
+>The current repo is the result of unboxing webpack and follow the [Zeppelin](blog.zeppelin.solutions/the-hitchhikers-guide-to-smart-contracts-in-ethereum-848f08001f05) tut.
 
 >So if you clone this there is no need of running in a terminal
 
