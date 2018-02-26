@@ -6,7 +6,8 @@
 
     `truffle unbox webpack`
 
->Well, let's start. In another terminal
+>Well, let's start. In another terminal type
+
     `testrpc -u 0`
 
 >Return to the main project terminal
@@ -23,7 +24,7 @@
 
     `poe.address`
 
-    '0x6074179af564f3a1b2620f95e14cc941fbc4db58'
+    0x6074179af564f3a1b2620f95e14cc941fbc4db58
 
 > Let's register our first "document"
 

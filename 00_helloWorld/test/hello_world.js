@@ -42,7 +42,10 @@ contract('helloReceipt', accounts => {
         console.log('_lastCaller: ',result.args._lastCaller);
         console.log('_message: ',result.args._message);
         console.log('_totalGas: ',result.args._totalGas.toNumber());
-    });
+    }); 
+
+    //undefined...
+    //logito = helloReceipt.logs.filter(l => l.event == 'GiveMeData')[0].args._creator
 
     const message = await helloReceipt.getMessage()
     assert.equal(message, 'topu', 'message is hola mundo')
