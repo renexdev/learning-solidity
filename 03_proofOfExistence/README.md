@@ -1,8 +1,10 @@
 # Learning Solidity: Proof Of existence (Zeppelin)
 
 >The current repo is the result of unboxing webpack and follow the tut of 
-https:>blog.zeppelin.solutions/the-hitchhikers-guide-to-smart-contracts-in-ethereum-848f08001f05
-So if you clone this there is no need of running in a terminal
+https:
+>blog.zeppelin.solutions/the-hitchhikers-guide-to-smart-contracts-in-ethereum-848f08001f05
+
+>So if you clone this there is no need of running in a terminal
 
     `truffle unbox webpack`
 

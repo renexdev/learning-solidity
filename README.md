@@ -1,4 +1,4 @@
-#Learning path: Solidity
+# Learning path: Solidity
 
 [Truffle commands](http://truffleframework.com/docs/advanced/commands)
 
