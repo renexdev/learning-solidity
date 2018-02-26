@@ -1,12 +1,4 @@
-#Recommended tuts
-
-[Zeppelin](https://blog.zeppelin.solutions/)
-
-[@gus_tavo_guim list](https://medium.com/@gus_tavo_guim)
-
-[Basic set-get contract managed from truffle console](https://medium.com/@gus_tavo_guim/using-truffle-to-create-and-deploy-smart-contracts-95d65df626a2)
-
-#Some Solidity definitions:
+# Some Solidity definitions:
 
 [Public vs External Functions in Solidity](https://medium.com/@gus_tavo_guim/public-vs-external-functions-in-solidity-b46bcf0ba3ac)
 
