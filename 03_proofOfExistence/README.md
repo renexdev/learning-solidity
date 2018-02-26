@@ -6,7 +6,7 @@
 
     `truffle unbox webpack`
 
->Well, let's start. In another terminal type
+>Well, let's start. In another terminal type 
 
     `testrpc -u 0`
 
