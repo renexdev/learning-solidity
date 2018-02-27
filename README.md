@@ -1,7 +1,7 @@
 # Learning path: Solidity
 
 
-### Truffle lectures:
+### Truffle resources:
 
 [Truffle commands](http://truffleframework.com/docs/advanced/commands)
 
@@ -15,6 +15,9 @@
 
 [Chai](http://chaijs.com/api/bdd/)
 
+## Recommended lectures
+
+[Library driven development by @izqui](https://blog.aragon.one/library-driven-development-in-solidity-2bebcaf88736)
 
 
 # Recommended tuts
