@@ -4,6 +4,8 @@
 
 [Solidity contracts](https://solidity.readthedocs.io/en/develop/contracts.html)
 
+[Smart contract's best practices](https://github.com/ConsenSys/smart-contract-best-practices)
+
 ### Truffle resources
 
 [Truffle commands](http://truffleframework.com/docs/advanced/commands)
@@ -25,6 +27,10 @@
 [Library driven development by @izqui](https://blog.aragon.one/library-driven-development-in-solidity-2bebcaf88736)
 
 # Recommended tuts
+
+
+[Ethereum+Truffle by @facuspagnuolo](https://medium.com/@angellopozo/testing-solidity-with-truffle-and-async-await-396e81c54f93
+
 
 [Ethereum+Truffle by @facuspagnuolo](https://blog.zeppelin.solutions/a-gentle-introduction-to-ethereum-programming-part-3-abdd9644d0c2)
 
