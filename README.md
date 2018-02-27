@@ -4,7 +4,7 @@
 
 [Solidity contracts](https://solidity.readthedocs.io/en/develop/contracts.html)
 
-[Smart contract's best practices](https://github.com/ConsenSys/smart-contract-best-practices)
+[ConSensys’s smart contract best practices](https://github.com/ConsenSys/smart-contract-best-practices)
 
 ### Truffle resources
 
