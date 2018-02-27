@@ -1,7 +1,10 @@
 # Learning path: Solidity
 
+### Solidity
 
-### Truffle resources:
+[Solidity contracts](https://solidity.readthedocs.io/en/develop/contracts.html)
+
+### Truffle resources
 
 [Truffle commands](http://truffleframework.com/docs/advanced/commands)
 
@@ -23,9 +26,9 @@
 
 # Recommended tuts
 
-[Ethereum+Truffle @facuspagnuolo](https://blog.zeppelin.solutions/a-gentle-introduction-to-ethereum-programming-part-3-abdd9644d0c2)
+[Ethereum+Truffle by @facuspagnuolo](https://blog.zeppelin.solutions/a-gentle-introduction-to-ethereum-programming-part-3-abdd9644d0c2)
 
-[Basic set-get contract managed from truffle console @gus_tavo_guim](https://medium.com/@gus_tavo_guim/using-truffle-to-create-and-deploy-smart-contracts-95d65df626a2)
+[Basic set-get contract managed from truffle console by @gus_tavo_guim](https://medium.com/@gus_tavo_guim/using-truffle-to-create-and-deploy-smart-contracts-95d65df626a2)
 
 [Zeppelin](https://blog.zeppelin.solutions/)
 
