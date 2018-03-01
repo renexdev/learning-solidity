@@ -1,0 +1,21 @@
+{
+  "deploy": [
+    // Names of contracts that should be deployed to the network.
+    "Parent",
+    "Organisation",
+    "OrganisationUpdated"
+  ],
+  "libraries": [
+    "ProposalsLibrary",
+    "SecurityLibrary"
+  ],
+  "rpc": {
+    // Default RPC configuration.
+    "host": "localhost",
+    "port": 8545,
+    "gas": 4000000
+  },
+  "mocha":{
+  	"reporter": "spec"
+   }
+}
