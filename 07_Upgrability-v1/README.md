@@ -1,6 +1,6 @@
-# Learning Solidity: Understanding proxies, storage, contract upgrability
+# Lab: Understanding proxies, storage, contract upgrability
 
-The idea of this project is to have a full working version on the topic [Writing upgradable contracts in Solidity by Elena Dimitrova](https://blog.colony.io/writing-upgradeable-contracts-in-solidity-6743f0eecc88). 
+The idea of this project is to have a full working version on the topic [Writing upgradable contracts in Solidity by Elena Dimitrova](https://blog.colony.io/writing-upgradeable-contracts-in-solidity-6743f0eecc88). The  explanation is more or less nice but the code is messy and in the repo there is not a well implemented sample.
 
 >Open your terminal
 

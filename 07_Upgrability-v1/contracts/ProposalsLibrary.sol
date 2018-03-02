@@ -7,7 +7,7 @@ library ProposalsLibrary {
   event ProposalUpdated(bytes32 key, uint256 when);
 
 	function getProposalCount(address _storageContract) constant returns(uint256) {
-		return EternalStorage(_storageContract).getUIntValue(sha3("ProposalCount"));
+    return EternalStorage(_storageContract).getUIntValue(sha3("ProposalCount"));
 	}
 
   function getProposal(address _storageContract, uint256 _id) constant returns (bytes32 proposalName, uint256 proposalEth)
