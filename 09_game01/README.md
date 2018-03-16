@@ -22,7 +22,7 @@
     `truffle test`
 
 >Would be this the correct answer?
-Play changin selfdestruct order...
+Play changing selfdestruct order...
 ```
     function foo() public {
         selfdestruct(bob);
