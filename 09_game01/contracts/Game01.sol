@@ -13,8 +13,37 @@ contract Game01 {
   }
 
   function foo() public {
-        selfdestruct(alice);
         selfdestruct(bob);
+        selfdestruct(alice);
+
   }
   function () public payable{}
 }
+
+
+contract Game02 {
+
+
+  address private alice;
+  address private bob;
+  
+  function Game01(address _alice, address _bob) {
+    alice = _alice;
+    bob = _bob;
+  }
+
+
+  function foo() public { 
+    this.die(this);
+    this.die(alice);
+  }
+
+  function die(address x) { selfdestruct(x); }
+
+  function () public payable{}
+}
+
+
+
+
+
