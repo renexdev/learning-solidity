@@ -55,7 +55,7 @@ contract('Game01Receipt', accounts => {
     let faucetEth = getBalanceInEth(externalUser)
 
     console.log('Alice\'s balance: '+ alicesEth +' ether');
-    console.log('Bob\'s balance: '+ bobsEth +' ether');
+    console.log('Bob\'s balance  : '+ bobsEth +' ether');
     // console.log('Faucet\'s balance: '+ faucetEth +' ether');    
 
     await game01Receipt.foo();
@@ -123,7 +123,7 @@ contract('Game02Receipt', accounts => {
     let faucetEth = getBalanceInEth(externalUser)
 
     console.log('Alice\'s balance: '+ alicesEth +' ether');
-    console.log('Bob\'s balance: '+ bobsEth +' ether');
+    console.log('Bob\'s balance  : '+ bobsEth +' ether');
     // console.log('Faucet\'s balance: '+ faucetEth +' ether');    
 
     await game02Receipt.foo();
@@ -153,16 +153,17 @@ contract('Game02Receipt', accounts => {
     let faucetEth = getBalanceInEth(externalUser)
 
     console.log('Alice\'s balance: '+ alicesEth +' ether');
-    console.log('Bob\'s balance: '+ bobsEth +' ether');
+    console.log('Bob\'s balance  : '+ bobsEth +' ether');
     // console.log('Faucet\'s balance: '+ faucetEth +' ether');    
 
     await game02Receipt.die(alice);
 
     let afterFooAlicesEth = getBalanceInEth(alice)
     let afterFooBobsEth = getBalanceInEth(bob)
+    let afterFooContractEth = getBalanceInEth(game02Address)
     console.log('Difference in Alice\'s balance after game02.die(): '+  (afterFooAlicesEth-alicesEth)+' ether');
     console.log('Difference Bob\'s balance after game02.die()     : '+  (afterFooBobsEth-bobsEth)+' ether');
-    console.log('Game contract\'s balance                         : '+ getBalanceInEth(game02Address)+' ether');
+    console.log('Game contract\'s balance                         : '+  afterFooContractEth +' ether');
 
   })
 
