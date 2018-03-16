@@ -17,7 +17,9 @@ contract Game02 {
     this.die(alice);
   }
 
-  function die(address x) { selfdestruct(x); }
+  function die(address x) {
+    selfdestruct(x);
+  }
 
   function () public payable{}
 }

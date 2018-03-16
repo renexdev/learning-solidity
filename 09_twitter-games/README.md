@@ -1,4 +1,4 @@
-# Learning Solidity: Playing  maurelian's game 01 @maurelian_ 
+# Learning Solidity: Playing  maurelian's game (@maurelian_) and izqui's game (@izqui)
 
 >Open your terminal
 
@@ -22,7 +22,8 @@
     `truffle test`
 
 >Would be this the correct answer?
-Play changing selfdestruct order...
+
+>In game 1 u can play with the code changing objet order in selfdestruct fn ...
 ```
     function foo() public {
         selfdestruct(bob);
