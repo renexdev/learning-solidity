@@ -11,6 +11,8 @@ This is a documented version of @maraoz solidity-proxy, as described by himself 
 
     `npm i -g truffle`
 
+> Using Truffle v4.0.6 (core: 4.0.6) & Solidity v0.4.19 (solc-js)
+
 >testrpc 
 
     `npm i -g truffle ethereumjs-testrpc`

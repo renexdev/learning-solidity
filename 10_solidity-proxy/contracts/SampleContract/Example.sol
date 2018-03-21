@@ -1,12 +1,11 @@
 pragma solidity ^0.4.8;
 
-import "../contracts/LibInterface.sol";
+import "../LibInterface.sol";
 
-library Example2 {
+library Example {
   function getUint(LibInterface.S storage s) public constant returns (uint) {
-    return s.i * 10;
+    return s.i;
   }
-
   function setUint(LibInterface.S storage s, uint i) public {
     s.i = i;
   }

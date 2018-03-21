@@ -1,16 +1,11 @@
-'use strict';
+const {assertRevert} = require('./helpers/assertThrow')
 
-const lkTestHelpers = require('lk-test-helpers')
-const {
-  expectThrow
-} = lkTestHelpers(web3)
-
-const Example = artifacts.require('./Example.sol')
-const ExampleReverts = artifacts.require('./ExampleReverts.sol')
-const Example2 = artifacts.require('./Example2.sol')
-const Dispatcher = artifacts.require('Dispatcher.sol')
-const DispatcherStorage = artifacts.require('DispatcherStorage.sol')
-const TheContract = artifacts.require('TheContract.sol')
+const Example = artifacts.require('Example')
+const ExampleReverts = artifacts.require('ExampleReverts')
+const Example2 = artifacts.require('Example2')
+const Dispatcher = artifacts.require('Dispatcher')
+const DispatcherStorage = artifacts.require('DispatcherStorage')
+const TheContract = artifacts.require('TheContract')
 
 contract('TestProxyLibrary', (accounts) => {
   describe('test', () => {
@@ -49,8 +44,20 @@ contract('TestProxyLibrary', (accounts) => {
 
       const exampleReverts = await ExampleReverts.new()
       await dispatcherStorage.replace(exampleReverts.address)
-      await expectThrow(thecontract.get())
+      return assertRevert(async () => {
+            await thecontract.get()
+      })//await expectThrow(thecontract.get())
+
     });
+
+
+    //    it('fails on reinitialization', async () => {
+ //       return assertRevert(async () => {
+ //           await app.initialize(vault.address, '0x00', periodDuration)
+  //      })
+  //  })
+
+
     it('measure gas costs', (done) => {
       done();
     });
@@ -65,7 +72,10 @@ contract('TestProxyLibrary', (accounts) => {
       })
 
       it('fail', async () => {
-        await expectThrow(subject(accounts[1]))
+    return assertRevert(async () => {
+              await subject(accounts[1])
+          })
+        //await expectThrow(subject(accounts[1]))
       })
       it('success', async () => {
         const result = await subject(accounts[0])

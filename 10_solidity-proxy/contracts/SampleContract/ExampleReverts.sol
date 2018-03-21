@@ -1,6 +1,6 @@
 pragma solidity ^0.4.8;
 
-import "../contracts/LibInterface.sol";
+import "../LibInterface.sol";
 
 library ExampleReverts {
   function getUint() public constant returns (uint) {
