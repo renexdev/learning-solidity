@@ -50,14 +50,6 @@ contract('TestProxyLibrary', (accounts) => {
 
     });
 
-
-    //    it('fails on reinitialization', async () => {
- //       return assertRevert(async () => {
- //           await app.initialize(vault.address, '0x00', periodDuration)
-  //      })
-  //  })
-
-
     it('measure gas costs', (done) => {
       done();
     });
